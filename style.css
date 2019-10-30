@@ -1,0 +1,28 @@
+.navbar {
+    background-color: #f4f1d0;
+    
+}
+
+body {
+    background-color: #7BB24D;
+}
+
+#gifMain {
+        display: flex;
+    flex-flow: column wrap;
+    height: 200vh;
+}
+
+
+
+.gifInner:nth-child(3n+1) { order: 1; }
+.gifInner:nth-child(3n+2) { order: 2; }
+.gifInner:nth-child(3n)   { order: 3; }
+
+#gifMain::before,
+#gifMain::after {
+  content: "";
+  flex-basis: 100%;
+  width: 0;
+  order: 2;
+}
